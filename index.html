@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>dev{camp} Glossary</title>
+		<style>
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				border: 1px solid gray;
+			}
+
+			th {
+				font-weight: bold;
+				text-align: right;
+				width: 15%;
+				border-right: 1px solid gray;
+				padding-right: 16px;
+			}
+
+			tr {
+				border-bottom: 1px solid gray;
+			}
+
+			tr:hover {
+				background-color: #d6eeee;
+			}
+
+			td {
+				padding: 8px 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Glossary</h1>
+		<table>
+			<tr>
+				<th>Access Token</th>
+				<td>
+					When implementing the OAuth 2.0 protocol, the access token adds authorization information including scopes
+					(permissions) and claims (attributes) intended to be consumed by the API resource to determine what data to
+					return.
+				</td>
+			</tr>
+			<tr>
+				<th>API Token</th>
+				<td>
+					A unique identifier used by an application requesting access to a service, the Okta Org. The API token is used
+					by the service to authenticate and authorize requests to the service and should be considered sensitive in
+					nature, much like a password, and not widely distributed or shared outside of its intended purpose.
+				</td>
+			</tr>
+			<tr>
+				<th>Authorization Server</th>
+				<td>An engine within Okta responsible for minting OAuth 2.0 tokens and applying access policies.</td>
+			</tr>
+
+			<tr>
+				<th>CIC</th>
+				<td><em>See Customer Identity Cloud</em></td>
+			</tr>
+
+			<tr>
+				<th>Claims</th>
+				<td>
+					Provide information or attributes within a token. For example, an ID Token will consist of some claims with
+					information about the user, maybe their first and last name, e-mail, or address. They can also carry
+					information about the client or the token itself, like who issued the token or what is its intended audience.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Customer Identity Cloud</th>
+				<td>Okta's primary offering for Customer Identity. Formerly known as Auth0.</td>
+			</tr>
+
+			<tr>
+				<th>ID Token</th>
+				<td>
+					When implementing the OpenID Connect protocol, the ID token adds authentication state and user profile
+					information intended to be read by 3rd party applications to authenticate the same identity across multiple
+					applications.
+				</td>
+			</tr>
+
+			<tr>
+				<th>JSON Web Token</th>
+				<td>
+					Commonly referred to as a JWT (pronounced j-o-t). A JWT is a cryptographically signed data structure (in the
+					JSON standardized format) that stores user information. Using a JWT allows information to be verified and
+					trusted with a digital signature. With this trusted digital signature in place the information can later be
+					verified using a signing key. OAuth 2.0 and OpenID Connect both utilize the JWT standard for their respective
+					tokens.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Multi-factor Authentication</th>
+				<td>An added layer of security used to verify an end user's identity when they sign into an application.</td>
+			</tr>
+
+			<tr>
+				<th>Okta Org</th>
+				<td>
+					All implementations of Okta start with an Okta tenant (commonly referred to as an Okta Org). An Okta Org is
+					the core of the Okta platform and consists of pre-built and fully integrated identity services born and built
+					in the cloud. These services include: Universal Directory, Single Sign-On, Adaptive Multi-factor
+					Authentication, Lifecycle Management, and API Access Management. The Okta Org is a true multi-tenant software
+					as a service solution built for extreme availability, scalability, and security.
+				</td>
+			</tr>
+
+			<tr>
+				<th>OAuth 2.0</th>
+				<td>
+					A protocol that provides authorization through the use of an access token, which contains scopes (permissions)
+					and claims (attributes).
+				</td>
+			</tr>
+
+			<tr>
+				<th>OpenID Connect</th>
+				<td>
+					A protocol that sits on top of the OAuth 2.0 framework and provides authentication through the use of an ID
+					token, which contains scopes and claims specifically for identity.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Postman</th>
+				<td>
+					An easy-to-use API Development platform that will enable us to utilize Okta RESTful APIs to perform common
+					identity functions such as creating users, creating groups, etc.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Sign-In Widget</th>
+				<td>
+					A JavaScript library that gives you a fully featured and customizable login experience for any application
+					with little to no code. It contains pre-built flows for authentication, self-service password reset,
+					multi-factor authentication, and error handling.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Scopes</th>
+				<td>
+					A special type of claim within a token used for authorization purposes. For example, an Access Token may
+					contain the scope orders_read, which means that the issued token will allow only queries of the orders
+					endpoint and not the ability to make changes to orders.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Token Inline Hooks</th>
+				<td>
+					A type of webhook that enables Okta to mint tokens with information sourced from an external data source
+					outside of Okta's directory service.
+				</td>
+			</tr>
+
+			<tr>
+				<th>Webhooks</th>
+				<td>
+					An API concept that provides a lightweight and efficient method for an application to provide other
+					applications with real-time information. Webhooks deliver data to other applications as it happens, meaning
+					you get data immediately. This is different from typical API patterns where you would need to poll for data
+					very frequently in order to get it real-time.
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
